@@ -11,6 +11,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio 4</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <h1>Ejercicio 4 - Visitas Extraterrestres</h1>
@@ -63,5 +65,7 @@
         echo "<h2 style='color: red'><strong>La cantidad de extraterrestres es $contadorExt</strong></h2>";
     }
     ?>
+    <br />
+    <a href="../" class="button">Volver</a>
 </body>
 </html>

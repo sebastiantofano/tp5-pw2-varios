@@ -1,5 +1,6 @@
 <?php
 
+
 function buscar($palabra, $texto){
     $ocurrencias = 0;
 

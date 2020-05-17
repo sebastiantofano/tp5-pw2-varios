@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio 6</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 <h1>Ejercicio 6 - Matriz</h1>
@@ -24,7 +26,7 @@ foreach ( $ejeX as $x ) {
 //print_r( $ejesXY );
 
 //Construcción de tabla
-$html = '<table border style="font-size: 20px;">';
+$html = '<table border style="fonts-size: 20px;">';
 $html .= '<th></th>';
 // Para crear las columnas X ( $ejeX = 1 a 10 )
 foreach ( $ejeX as $col_X ) {
@@ -62,5 +64,7 @@ for($i=1; $i<=10; $i++){
 }
 echo "<p><strong>Suma de toda la matriz: $resultado</strong></p>";
 ?>
+<br />
+<a href="../" class="button">Volver</a>
 </body>
 </html>
