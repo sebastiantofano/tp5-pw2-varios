@@ -21,6 +21,10 @@
     <li><a href="ejercicio5">Ejercicio 5</a></li>
     <li><a href="ejercicio6">Ejercicio 6</a></li>
     <li><a href="ejercicio7">Ejercicio 7</a></li>
+    <li><a href="ejercicio8">Ejercicio 8</a></li>
+    <li><a href="ejercicio9">Ejercicio 9</a></li>
+    <li><a href="ejercicio10">Ejercicio 10</a></li>
+
 </ul>
 </body>
 </html>
