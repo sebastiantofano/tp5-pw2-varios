@@ -30,8 +30,11 @@ class Pacman {
         $this->puntos+=100;
     }
 
-
-
+    public function restart(){
+        $this->vidas = 3;
+        $this->puntos = 0;
+        return "Tu Pacman fue restablecido";
+    }
     /**
      * @return int
      */
