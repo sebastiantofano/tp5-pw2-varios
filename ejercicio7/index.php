@@ -10,7 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio 8</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <!--    Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
 <h1>Ejercicio 7 - Búsqueda de palabra</h1>
@@ -20,13 +23,25 @@
     $palabra = "dolorem";
     $resultado = buscar($palabra,$texto);
 
-    echo "<p><strong>El texto enviado es:</strong><br /> $texto</p>";
-    echo "<p><strong>La palabra enviada es:</strong> $palabra</p>";
-    echo "<p><strong>La cantidad de ocurrencias es:</strong> $resultado</p>";
+    echo "<p class='h3'><strong>El texto enviado es:</strong><br /> <p class=\"p-3 mb-2 bg-info text-white\">$texto</p></p>";
+    echo "<p class='h3 '><strong>La palabra buscada es:</strong> <span class='text-primary'> $palabra</span></p>";
+    echo "<p class='h3'><strong>La cantidad de ocurrencias es:</strong> $resultado</p>";
 
 ?>
 
 <br />
-<a href="../" class="button">Volver</a>
+<a href="../" class="btn btn-outline-primary ">Volver</a>
+<!--Jquery.js-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<!--Popper.js-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<!--js-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
