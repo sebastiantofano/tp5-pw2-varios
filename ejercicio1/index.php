@@ -13,7 +13,7 @@
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-<h1>Ejercicio 1 - Imágenes</h1>
+<h1>Ejercicio 1 - Insta-gramo</h1>
 <h3><a href="listado-imagenes.php">Ir al listado de imágenes del Ejercicio 2</a></h3>
 <a href="../" class="btn btn-outline-primary ">Volver</a>
 <br />
@@ -22,6 +22,11 @@
     <input type="submit" value="Cargar Imagen">
 </form>
 <?php
+echo (isset($_GET["carga"]) and $_GET["carga"]=='1') ? "<p style='color:green'>La imagen se cargo correctamente" : "";
+echo (isset($_GET["carga"]) and $_GET["carga"]=='2') ? "<p style='color:red'>Una imagen ya existe con este nombre" : "";
+echo (isset($_GET["carga"]) and $_GET["carga"]=='3') ? "<p style='color:red'>No es un formato aceptado" : "";
+
+
 $dirImagenes = "./img/";
 $arrayImagenes = dir($dirImagenes);
 
@@ -35,9 +40,7 @@ while(($archivo = $arrayImagenes->read()) !== false ){
     }
 }
 $arrayImagenes->close();
-echo (isset($_GET["carga"]) and $_GET["carga"]=='1') ? "<p style='color:green'>La imagen se cargo correctamente" : "";
-echo (isset($_GET["carga"]) and $_GET["carga"]=='2') ? "<p style='color:red'>Una imagen ya existe con este nombre" : "";
-echo (isset($_GET["carga"]) and $_GET["carga"]=='3') ? "<p style='color:red'>No es un formato aceptado" : "";
+
 ?>
 
 

@@ -4,7 +4,7 @@ $dir = "./img/";
 $tipoArchivo = $_FILES['imagen']['type'];
 $tamanoArchivo = $_FILES['imagen']['size'];
 
-if (!((strpos($tipoArchivo, "jpeg") || strpos($tipoArchivo, "jpg") || strpos($tipoArchivo, "png")) && ($tamanoArchivo  < 50000000))){
+if (!((strpos($tipoArchivo, "jpeg") || strpos($tipoArchivo, "jpg") || strpos($tipoArchivo, "png") || (strpos($tipoArchivo, "gif"))) && ($tamanoArchivo  < 50000000))){
     header("location: index.php?carga=3");
     exit();
 }else{

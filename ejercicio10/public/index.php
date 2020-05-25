@@ -19,7 +19,7 @@ include_once "../scr/FantasmaComestible.php";
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Ejercicio 10 - Pacman</h1>
+    <h1>Ejercicio 10 - Packman come tuti</h1>
 
     <?php
     $pacman = new Pacman();
@@ -38,7 +38,7 @@ include_once "../scr/FantasmaComestible.php";
             $pacman->chocaContra($fantasmaComestible);
             $pacman->chocaContra($fantasmaComestible);
 
-//            $pacman->chocaContra($fantasma);
+            $pacman->chocaContra($fantasma);
             $pacman->chocaContra($fantasma);
             $pacman->chocaContra($fantasma);
 
@@ -56,7 +56,7 @@ include_once "../scr/FantasmaComestible.php";
        $restablecido = restablecerPacman($pacman);
        $vidasRestablecidas = $pacman->getVidas();
        $puntosRestablecidos = $pacman->getPuntos();
-        echo $restablecido;
+        echo "<p class='text-success'>$restablecido";
         echo "<p class='h5'>Nuevas vidas: $vidasRestablecidas</p>";
         echo "<p class='h5'>Puntos: $puntosRestablecidos</p>";
     }

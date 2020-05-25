@@ -54,6 +54,7 @@ echo "<p class='h2'><strong>Diagonal principal: </strong></p>";
 for($i=1; $i<=10; $i++){
     echo "<span class='text-success h4'>".$ejesXY[$i][$i] . " - " . "</span>" ;
 }
+
 echo "<p class='h2'><strong>Diagonal secundaria: </strong></p>";
 for($i=10; $i>=1; $i--){
     echo "<span class='text-success h4'>".$ejesXY[11-$i][$i] . " - " . "</span>" ;

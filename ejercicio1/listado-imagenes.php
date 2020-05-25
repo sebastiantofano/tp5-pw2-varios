@@ -13,7 +13,7 @@
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Listado de Imágenes</h1>
+    <h1>Ejercicio 2 - Insta-reciclando (para cuidar el medio ambiente)</h1>
     <?php
     $dir = './img/';
     $dirArray = dir($dir);

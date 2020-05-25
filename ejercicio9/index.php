@@ -17,17 +17,19 @@ include_once "./clases/Multiplicar.php";
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-<h1>Calculadora</h1>
+<h1>Ejercicio 9 - Calcula Doris - No olvidemos imprimir el resultado final!</h1>
 <?php
     $operando1 = new Operando(10);
     $operando2 = new Operando(5);
     $resultado1 = new Sumar($operando1,$operando2);
     $resultado2 = new Restar($operando1,$operando2);
     $resultado3 = new Multiplicar($operando1,$operando2);
+    $resultadoFinal = new Multiplicar(new Operando(10), new Operando($resultado1->resolverEcuacion()));
 
     echo "<p class='h5'>El resultado de ".$operando1->getValor()." + " . $operando2->getValor() . " es ".$resultado1->resolverEcuacion()."</p>";
     echo "<p class='h5'>El resultado de ".$operando1->getValor()." - " . $operando2->getValor() . " es ".$resultado2->resolverEcuacion()."</p>";
     echo "<p class='h5'>El resultado de ".$operando1->getValor()." * " . $operando2->getValor() . " es ".$resultado3->resolverEcuacion()."</p>";
+echo "<p class='h3 text-success'>El resultado de ".$operando1->getValor()." * (".$operando1->getValor()." + " . $operando2->getValor() . ") es ".$resultadoFinal->resolverEcuacion()."</p>";
 ?>
 <br />
 <a href="../" class="btn btn-outline-primary ">Volver</a>
